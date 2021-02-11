@@ -1,0 +1,21 @@
+ul  {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+ul li a{
+    text-decoration: none;
+    
+}
+.link{
+    color:  #49515d;
+    margin: 0 20px;
+    text-align: center;
+    color: #49515d;
+    font-size: 15px;
+    opacity: 0.6;
+}
+.active{
+
+}
