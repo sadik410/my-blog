@@ -1,51 +1,59 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import "./header.css"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 
 const menus = [
   { link: "/", title: "Home" },
   { link: "/Resume", title: "Resume" },
   { link: "/Services", title: "Services" },
-]
-const Header = () => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+];
+const Header = () => {
+  const currentPage = window.location.href.slice(
+    window.location.href.lastIndexOf("/") + 1
+  );
+
+  const iscurrentPage = ({ title, currentPage }) => {
+    currentPage = currentPage === "" ? "Home" : currentPage;
+    return currentPage === title ? "active" : "";
+  };
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        paddingTop: 20,
+        paddingBottom: 20,
       }}
+      className="header row justify-content-between"
     >
+      <h1 className="name">
+        Sadik
+        <span> Milliti</span>
+      </h1>
       <nav>
-        <ul className="md-3">
-        {menus.map(menu => (
-          <li>
-            <Link
-              className="link"
-              to={menu.link}
-              
-            >
-              {menu.title}
-            </Link>
-          </li>
-        ))}
+        <ul className="">
+          {menus.map(({ title, link }) => (
+            <li key={title}>
+              <Link
+                activeClassName="active"
+                className="link"
+                to={link}
+                state={{ title }}
+              >
+                {title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
-    </div>
-  </header>
-)
+    </header>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

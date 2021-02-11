@@ -1,16 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Section from "../components/section/Section";
 
-const Resume = () => (
-  <Layout>
-    <SEO title="Resume" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+const Resume = () => {
+  return (
+    <Layout>
+      <SEO title="Resume" />
+      <Section title="Resume">
+        <h3>Resume</h3>
+      </Section>
+    </Layout>
+  );
+};
 
-export default Resume
+export default Resume;

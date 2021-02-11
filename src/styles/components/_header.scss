@@ -1,0 +1,56 @@
+.header {
+  align-items: center;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    li a {
+      text-decoration: none;
+      font-family: Roboto;
+      position: relative;
+    }
+    a.active {
+      opacity: 1;
+      padding-bottom: 3px;
+      border-bottom: 2px solid $color-primary-1;
+    }
+    a:before {
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: -3px;
+      content: "";
+      width: 0;
+      height: 2px;
+      margin: 0 auto;
+      background-color: $color-primary-1;
+      transition: all 0.15s ease-in-out;
+    }
+    a:not(.active):hover:before {
+      width: 20px;
+      border-bottom: 2px solid $color-primary-1;
+
+      transition: height 0.3s linear, width 0.3s linear 0.3s;
+    }
+
+    .link {
+      color: #49515d;
+      margin: 0 20px;
+      text-align: center;
+      color: #49515d;
+      font-size: 15px;
+      opacity: 0.6;
+    }
+  }
+}
+.name {
+  color: #49515d;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  span {
+    color: $color-primary-1;
+  }
+}
