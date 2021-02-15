@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header/header";
 import "./layout.css";
+import PanelSwitcher from "./PanelSwitcher";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="container">
+      <PanelSwitcher />
       <Header />
       <div>
         <main>{children}</main>

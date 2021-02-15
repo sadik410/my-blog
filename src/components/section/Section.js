@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 import SectionHeader from "./SectionHeader";
 import SectionBody from "./SectionBody";
 
-const Section = ({ children, title }) => {
+const Section = ({ children, title, header }) => {
   return (
-    <section className="row flex-column section">
-      <SectionHeader title={title} />
+    <section className=" flex-column section">
+      <SectionHeader title={title} header={header} />
       <SectionBody>{children}</SectionBody>
     </section>
   );

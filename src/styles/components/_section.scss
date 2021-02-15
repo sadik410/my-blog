@@ -3,6 +3,7 @@
   box-shadow: 0 15px 25px 0 rgb(0 0 0 / 10%);
   overflow: hidden;
   padding-bottom: 20px;
+  background-color: $white;
   &__header {
     background-color: $color-primary-1;
     padding: 30px 50px;
@@ -17,13 +18,13 @@
   &__title {
     color: $white;
     font-size: 44px;
-    font-family: Montserrat, Helvetica, sans-serif;
+    font-family: Montserrat;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0px;
     text-align: center;
   }
   &__body {
-    padding: 30px 50px;
+    padding: 30px 0px;
   }
 }

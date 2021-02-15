@@ -8,42 +8,43 @@ const menus = [
   { link: "/Services", title: "Services" },
 ];
 const Header = () => {
-  const currentPage = window.location.href.slice(
+  /*  const currentPage = window.location.href.slice(
     window.location.href.lastIndexOf("/") + 1
   );
-
-  const iscurrentPage = ({ title, currentPage }) => {
+ */
+  /* const iscurrentPage = ({ title, currentPage }) => {
     currentPage = currentPage === "" ? "Home" : currentPage;
     return currentPage === title ? "active" : "";
-  };
+  }; */
   return (
     <header
       style={{
         paddingTop: 20,
         paddingBottom: 20,
       }}
-      className="header row justify-content-between"
     >
-      <h1 className="name">
-        Sadik
-        <span> Milliti</span>
-      </h1>
-      <nav>
-        <ul className="">
-          {menus.map(({ title, link }) => (
-            <li key={title}>
-              <Link
-                activeClassName="active"
-                className="link"
-                to={link}
-                state={{ title }}
-              >
-                {title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div className="header row justify-content-between">
+        <h1 className="name">
+          Sadik
+          <span> Milliti</span>
+        </h1>
+        <nav>
+          <ul className="">
+            {menus.map(({ title, link }) => (
+              <li key={title}>
+                <Link
+                  activeClassName="active"
+                  className="link"
+                  to={link}
+                  state={{ title }}
+                >
+                  {title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

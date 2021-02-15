@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SectionHeader = ({ title }) => {
+const SectionHeader = ({ title, header }) => {
   return (
     <div className="section__header">
-      <h2 className="section__title">{title}</h2>
+      {header ? header : <h2 className="section__title">{title}</h2>}
     </div>
   );
 };
 
 SectionHeader.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  header: PropTypes.any,
 };
 
 SectionHeader.defaultProps = { title: "" };
