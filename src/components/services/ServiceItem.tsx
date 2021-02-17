@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { ServiceItemTypes } from "../../types";
 
-const ServiceItem = ({ icon, title, subtitle }) => {
+const ServiceItem = ({ icon, title, subtitle }: ServiceItemTypes) => {
   return (
     <div className="service  col-xs-12 col-sm-4 ">
       <div className="service__icon">
@@ -12,13 +12,5 @@ const ServiceItem = ({ icon, title, subtitle }) => {
     </div>
   );
 };
-
-ServiceItem.propTypes = {
-  title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-};
-
-ServiceItem.defaultProps = {};
 
 export default ServiceItem;

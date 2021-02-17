@@ -1,6 +1,6 @@
 .home {
   .photo {
-    max-width: 280px;
+    width: 210px;
     margin-bottom: -75px;
     text-align: center;
   }
@@ -9,7 +9,7 @@
     background-color: $white;
     text-align: center;
     box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out !important;
     width: 212px;
     height: auto;
     margin: 0;

@@ -131,6 +131,11 @@ var plugins = [{
     "include_favicon": true,
     "cacheDigest": "4a9773549091c227cd2eb82ccd9c5e3a"
   }
+}, {
+  plugin: __webpack_require__(/*! ./gatsby-ssr */ "./gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
@@ -1583,6 +1588,29 @@ function stripPrefix(str, prefix = ``) {
 
   return str;
 }
+
+/***/ }),
+
+/***/ "./gatsby-ssr.js":
+/*!***********************!*\
+  !*** ./gatsby-ssr.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/ssr-apis/
+ */
+// You can delete this file if you're not using it
+const React = __webpack_require__(/*! react */ "react");
+
+const Provider = __webpack_require__(/*! ./src/context/Provider */ "./src/context/Provider.tsx");
+
+exports.wrapRootElement = ({
+  element
+}) => /*#__PURE__*/React.createElement(Provider, null, element);
 
 /***/ }),
 
@@ -33235,6 +33263,43 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./src/context/Provider.tsx":
+/*!**********************************!*\
+  !*** ./src/context/Provider.tsx ***!
+  \**********************************/
+/*! exports provided: myContext, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "myContext", function() { return myContext; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const myContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])({
+  activeColor: "#2196F3",
+  changeColor: () => {}
+});
+
+const Provider = props => {
+  const {
+    0: activeColor,
+    1: setActiveColor
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("#2196F3");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(myContext.Provider, {
+    value: {
+      activeColor,
+      changeColor: color => setActiveColor(color)
+    }
+  }, props.children);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (({
+  children
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Provider, null, children));
 
 /***/ }),
 

@@ -1,10 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import SectionHeader from "./SectionHeader";
 import SectionBody from "./SectionBody";
+import { SectionHeaderTypes } from "../../types";
 
-const Section = ({ children, title, header }) => {
+interface SectionProps extends SectionHeaderTypes {
+  children: any;
+}
+const Section = ({ children, title, header }: SectionProps) => {
   return (
     <section className=" flex-column section">
       <SectionHeader title={title} header={header} />
@@ -12,11 +15,5 @@ const Section = ({ children, title, header }) => {
     </section>
   );
 };
-
-Section.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Section.defaultProps = {};
 
 export default Section;

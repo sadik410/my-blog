@@ -1,23 +1,22 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState, useContext } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { myContext } from "../context/Provider";
 
-const panelColors = [
-  "#7e6df6",
-  "#F44336",
-  "#2196F3",
-  "#FF5722",
-  "#2eca7f",
-  "#29B6F6",
-  "#E91E63",
-  "#A0F",
-  "#FF9800",
-  "#FBC02D",
-  "#9dd100",
-  "#26d9ac",
-];
 const PanelSwitcher = () => {
   const [isactive, setActive] = useState(false);
-  const [activeColor, setActiveColor] = useState("#7e6df6");
+
+  const { activeColor, changeColor } = useContext(myContext);
+
+  const data = useStaticQuery(graphql`
+    query PanelSwitcherQuery {
+      site {
+        siteMetadata {
+          panelColors
+        }
+      }
+    }
+  `);
+
   return (
     <div className="panel">
       <button className="panel__switcher" onClick={() => setActive(!isactive)}>
@@ -27,27 +26,22 @@ const PanelSwitcher = () => {
         <div className="panel__title">Main Color</div>
         {activeColor}
         <div className="panel__main-color d-flex justify-content-between flex-wrap">
-          {panelColors.map((color) => (
-            <span
+          {data?.site?.siteMetadata?.panelColors.map((color) => (
+            <button
               key={color}
               className={`preview ${activeColor === color ? "active" : ""}`}
               style={{ backgroundColor: `${color}` }}
               onClick={() => {
-                setActiveColor(color);
+                changeColor(color);
               }}
             >
               <i className="fa fa-check"></i>
-            </span>
+            </button>
           ))}
-          <span className="preview"></span>
         </div>
       </div>
     </div>
   );
 };
-
-PanelSwitcher.propTypes = {};
-
-PanelSwitcher.defaultProps = {};
 
 export default PanelSwitcher;

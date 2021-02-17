@@ -1,4 +1,21 @@
 .resume {
+  .my_skills {
+    &__title {
+      color: #49515d;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 15px;
+    }
+    ul {
+      margin: 15px;
+      li {
+        font-family: Montserrat;
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+  }
   .title {
     font-family: Montserrat;
   }
