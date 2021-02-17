@@ -11,7 +11,8 @@ const Services = ({ data }) => {
   const { activeColor } = useContext(myContext);
   return (
     <Layout>
-      <SEO title="Services" />
+      {/*       <SEO title="Services" />
+       */}{" "}
       <Section title="Services">
         <div className="container services">
           <h4 className="title">

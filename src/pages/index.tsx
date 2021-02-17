@@ -26,9 +26,10 @@ const IndexPage = ({ data }) => {
       </div>
     </div>
   );
+
   return (
     <Layout>
-      <SEO title="Home" />
+      {/* <SEO title="Home" /> */}
       <Section title="Home" header={_header}>
         <div className="home container  ">
           <div className="home__body row">
@@ -47,7 +48,7 @@ const IndexPage = ({ data }) => {
             </div>
             <div className=" col-xs-12 col-sm-6  ">
               <ul>
-                {data.site.siteMetadata.home?.personalInfor.map(
+                {data?.site?.siteMetadata?.home?.personalInfor.map(
                   ({ label, value }) => (
                     <li key={label}>
                       <span className="label">{label} </span>

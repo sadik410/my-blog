@@ -1,12 +1,12 @@
 import React from "react";
 
-import Header from "./header/header";
+import Header from "./header/Header";
 import "./layout.css";
 import "../styles/layouts.scss";
 
 import PanelSwitcher from "./PanelSwitcher";
 
-const Layout = ({ children }: { children: any }) => {
+const Layout = ({ children }) => {
   return (
     <div className="container">
       <PanelSwitcher />

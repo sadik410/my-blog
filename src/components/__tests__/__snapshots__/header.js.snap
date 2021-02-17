@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  style={
+    Object {
+      "paddingBottom": 20,
+      "paddingTop": 20,
+    }
+  }
+>
+  <div
+    className="header row justify-content-between"
+  >
+    <h1
+      className="name"
+    >
+      Sadik
+      <span
+        style={
+          Object {
+            "color": "#2196F3",
+          }
+        }
+      >
+         Milliti
+      </span>
+    </h1>
+    <nav>
+      <ul
+        className=""
+      />
+    </nav>
+  </div>
+</header>
+`;

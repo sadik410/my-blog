@@ -12,7 +12,8 @@ const Resume = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Resume" />
+      {/*       <SEO title="Resume" />
+       */}{" "}
       <Section title="Resume">
         <div className="container resume">
           <h4 className="title">

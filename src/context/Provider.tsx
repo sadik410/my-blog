@@ -1,10 +1,6 @@
 import React, { useState, createContext } from "react";
 
-export type GlobalContent = {
-  activeColor: string;
-  changeColor: (color: string) => void;
-};
-export const myContext = createContext<GlobalContent>({
+export const myContext = createContext({
   activeColor: "#2196F3",
   changeColor: () => {},
 });

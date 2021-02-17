@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="panel"
+  >
+    <button
+      className="panel__switcher"
+      onClick={[Function]}
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-gear"
+      />
+    </button>
+    <div
+      className="panel__body "
+    >
+      <div
+        className="panel__title"
+      >
+        Main Color
+      </div>
+      #2196F3
+      <div
+        className="panel__main-color d-flex justify-content-between flex-wrap"
+      />
+    </div>
+  </div>
+  <header
+    style={
+      Object {
+        "paddingBottom": 20,
+        "paddingTop": 20,
+      }
+    }
+  >
+    <div
+      className="header row justify-content-between"
+    >
+      <h1
+        className="name"
+      >
+        Sadik
+        <span
+          style={
+            Object {
+              "color": "#2196F3",
+            }
+          }
+        >
+           Milliti
+        </span>
+      </h1>
+      <nav>
+        <ul
+          className=""
+        />
+      </nav>
+    </div>
+  </header>
+  <div>
+    <main>
+      <section
+        className=" flex-column section"
+      >
+        <div
+          className="section__header"
+          style={
+            Object {
+              "backgroundColor": "#2196F3",
+            }
+          }
+        >
+          <div
+            className=" home row align-items-center"
+          >
+            <div
+              className="col-sm-4 col-md-4 col-lg-4"
+            />
+            <div
+              className="col-sm-8 col-md-8 col-lg-8 text-center"
+            >
+              <div
+                className="title_block"
+              >
+                 Sadik Milliti
+              </div>
+              <div
+                className="subtitle_block"
+              >
+                frontend-developer
+              </div>
+              <button
+                className="linkedin"
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-linkedin"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          className="section__body"
+        >
+          <div
+            className="home container  "
+          >
+            <div
+              className="home__body row"
+            >
+              <div
+                className=" col-xs-12 col-sm-6 "
+              >
+                <h1
+                  className="about_me"
+                >
+                  About
+                  <span
+                    style={
+                      Object {
+                        "color": "red",
+                      }
+                    }
+                  >
+                     Me
+                  </span>
+                </h1>
+                <p>
+                  Always passionate about computers and new technologies, the world of the web is my favorite field, I master ui / ux and development, I am very versatile, curious and rigorous and I adapt to any circumstance. Sense of responsibility, perseverance, discernment and management of priorities.
+                </p>
+              </div>
+              <div
+                className=" col-xs-12 col-sm-6  "
+              >
+                <ul>
+                  <li>
+                    <span
+                      className="label"
+                    >
+                      Age
+                       
+                    </span>
+                    <span
+                      className="value"
+                    >
+                      30
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      className="label"
+                    >
+                      Residence
+                       
+                    </span>
+                    <span
+                      className="value"
+                    >
+                      belgium
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      className="label"
+                    >
+                      Address
+                       
+                    </span>
+                    <span
+                      className="value"
+                    >
+                      27 rue léopold, 1000 bruxelles
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      className="label"
+                    >
+                      e-mail
+                       
+                    </span>
+                    <span
+                      className="value"
+                    >
+                      sadikosad@gmail.com
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      className="label"
+                    >
+                      Phone
+                       
+                    </span>
+                    <span
+                      className="value"
+                    >
+                      0032492436675
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      className="label"
+                    >
+                      Freelance
+                       
+                    </span>
+                    <span
+                      className="value"
+                    >
+                      Available
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      style={
+        Object {
+          "marginTop": "2rem",
+        }
+      }
+    >
+      © 
+      2021
+      , Built with
+       
+      <a
+        href="https://www.gatsbyjs.com"
+      >
+        Gatsby
+      </a>
+    </footer>
+  </div>
+</div>
+`;
