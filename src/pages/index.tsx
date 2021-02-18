@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { graphql } from "gatsby";
+import * as React from 'react';
+import {graphql, useStaticQuery} from "gatsby";
 
 import Layout from "../components/layout";
 import Image from "../components/image";
@@ -7,8 +7,24 @@ import SEO from "../components/seo";
 import Section from "../components/section/Section";
 import { myContext } from "../context/Provider";
 
-const IndexPage = ({ data }) => {
-  const { activeColor } = useContext(myContext);
+const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        home {
+          personalInfor {
+            label
+            value
+          }
+        }
+      }
+    }
+  }
+`;
+
+const IndexPage = () => {
+  const { activeColor } = React.useContext(myContext);
+  const data = useStaticQuery(query);
   const _header = (
     <div className=" home row align-items-center">
       <div className="col-sm-4 col-md-4 col-lg-4">
@@ -66,18 +82,3 @@ const IndexPage = ({ data }) => {
 };
 
 export default IndexPage;
-
-export const query = graphql`
-  query HomePageQuery {
-    site {
-      siteMetadata {
-        home {
-          personalInfor {
-            label
-            value
-          }
-        }
-      }
-    }
-  }
-`;

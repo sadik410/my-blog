@@ -1,36 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<header
-  style={
-    Object {
-      "paddingBottom": 20,
-      "paddingTop": 20,
-    }
-  }
->
-  <div
-    className="header row justify-content-between"
+<div>
+  <header
+    style="padding-top: 20px; padding-bottom: 20px;"
   >
-    <h1
-      className="name"
+    <div
+      class="header row justify-content-between"
     >
-      Sadik
-      <span
-        style={
-          Object {
-            "color": "#2196F3",
-          }
-        }
+      <h1
+        class="name"
       >
-         Milliti
-      </span>
-    </h1>
-    <nav>
-      <ul
-        className=""
-      />
-    </nav>
-  </div>
-</header>
+        Sadik
+        <span
+          style="color: rgb(33, 150, 243);"
+        >
+           Milliti
+        </span>
+      </h1>
+      <nav>
+        <ul
+          class=""
+        >
+          <li>
+            <a
+              class="link"
+              href="/"
+              state="[object Object]"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="/Resume"
+              state="[object Object]"
+            >
+              Resume
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              href="/Services"
+              state="[object Object]"
+            >
+              Services
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
 `;

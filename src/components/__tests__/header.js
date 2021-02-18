@@ -1,21 +1,21 @@
-import React from "react";
+import * as React from 'react';
+import { render, screen } from "@testing-library/react";
 
-import renderer from "react-test-renderer";
-
-import { StaticQuery } from "gatsby";
+import { useStaticQuery } from "gatsby";
 import Header from "../header/Header";
 
+const links = [
+  { link: "/", title: "Home" },
+  { link: "/Resume", title: "Resume" },
+  { link: "/Services", title: "Services" },
+];
+
 beforeEach(() => {
-  StaticQuery.mockImplementationOnce(({ render }) =>
-    render({
+  useStaticQuery.mockImplementationOnce(() => ({
       site: {
         siteMetadata: {
           header: {
-            menus: [
-              { link: "/", title: "Home" },
-              { link: "/Resume", title: "Resume" },
-              { link: "/Services", title: "Services" },
-            ],
+            menus: links,
           },
         },
       },
@@ -25,7 +25,23 @@ beforeEach(() => {
 
 describe("Header", () => {
   it("renders correctly", () => {
-    const component = renderer.create(<Header />).toJSON();
-    expect(component).toMatchSnapshot();
+    const { container } = render(<Header />);
+    expect(container).toMatchSnapshot();
+  });
+  it("renders a title with my name", () => {
+    const { getByText } = render(<Header />);
+    expect(getByText((content, element) => {
+        return element.tagName.toLowerCase() === 'h1' && element.textContent === 'Sadik Milliti'
+    })).toBeInTheDocument();
+  });
+  it("renders the links in the gatsbyConf", () => {
+    const { getByText } = render(<Header />);
+    links.forEach(item => {
+      const getLink = (content, element) => {
+        return element.tagName.toLowerCase() === 'a' && element.textContent === item.title
+      }
+      expect(getByText(getLink)).toBeInTheDocument();
+      expect(getByText(getLink).getAttribute('href')).toEqual(item.link);
+    })
   });
 });

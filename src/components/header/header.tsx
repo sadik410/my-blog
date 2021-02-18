@@ -1,17 +1,9 @@
-import React, { useContext } from "react";
+import * as React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { myContext } from "../../context/Provider";
 
 const Header = () => {
-  /*  const currentPage = window.location.href.slice(
-    window.location.href.lastIndexOf("/") + 1
-  );
- */
-  /* const iscurrentPage = ({ title, currentPage }) => {
-    currentPage = currentPage === "" ? "Home" : currentPage;
-    return currentPage === title ? "active" : "";
-  }; */
-  const { activeColor } = useContext(myContext);
+  const { activeColor } = React.useContext(myContext);
 
   const data = useStaticQuery(graphql`
     query HeaderMenuQuery {

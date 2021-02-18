@@ -5,7 +5,3 @@
  */
 // You can delete this file if you're not using it
 
-const React = require("react");
-const Provider = require("./src/context/Provider");
-
-exports.wrapRootElement = ({ element }) => <Provider>{element}</Provider>;

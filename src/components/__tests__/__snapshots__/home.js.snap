@@ -1,246 +1,355 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home renders correctly 1`] = `
-<div
-  className="container"
->
+exports[`Home render an  1`] = `
+<div>
   <div
-    className="panel"
+    class="container"
   >
-    <button
-      className="panel__switcher"
-      onClick={[Function]}
-    >
-      <i
-        aria-hidden="true"
-        className="fa fa-gear"
-      />
-    </button>
     <div
-      className="panel__body "
+      class="panel"
+    >
+      <button
+        class="panel__switcher"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-gear"
+        />
+      </button>
+      <div
+        class="panel__body "
+      >
+        <div
+          class="panel__title"
+        >
+          Main Color
+        </div>
+        #2196F3
+        <div
+          class="panel__main-color d-flex justify-content-between flex-wrap"
+        />
+      </div>
+    </div>
+    <header
+      style="padding-top: 20px; padding-bottom: 20px;"
     >
       <div
-        className="panel__title"
+        class="header row justify-content-between"
       >
-        Main Color
+        <h1
+          class="name"
+        >
+          Sadik
+          <span
+            style="color: rgb(33, 150, 243);"
+          >
+             Milliti
+          </span>
+        </h1>
+        <nav>
+          <ul
+            class=""
+          />
+        </nav>
       </div>
-      #2196F3
-      <div
-        className="panel__main-color d-flex justify-content-between flex-wrap"
-      />
+    </header>
+    <div>
+      <main>
+        <section
+          class=" flex-column section"
+        >
+          <div
+            class="section__header"
+            style="background-color: rgb(33, 150, 243);"
+          >
+            <div
+              class=" home row align-items-center"
+            >
+              <div
+                class="col-sm-4 col-md-4 col-lg-4"
+              >
+                <div
+                  class="photo"
+                >
+                  <div
+                    class=" gatsby-image-wrapper"
+                    style="position: relative; overflow: hidden;"
+                  >
+                    <div
+                      aria-hidden="true"
+                      style="width: 100%; padding-bottom: 100%;"
+                    />
+                    <picture>
+                      <source
+                        sizes="100 200 300"
+                        srcset="asdfasdf"
+                      />
+                      <img
+                        alt=""
+                        loading="lazy"
+                        sizes="100 200 300"
+                        src="pretend-i-am-a-base64-encoded-image"
+                        srcset="asdfasdf"
+                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+                      />
+                    </picture>
+                    <noscript>
+                      &lt;picture&gt;&lt;source srcset="asdfasdf" sizes="100 200 300" /&gt;&lt;img loading="lazy" sizes="100 200 300" srcset="asdfasdf" src="pretend-i-am-a-base64-encoded-image" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                    </noscript>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-sm-8 col-md-8 col-lg-8 text-center"
+              >
+                <div
+                  class="title_block"
+                >
+                   Sadik Milliti
+                </div>
+                <div
+                  class="subtitle_block"
+                >
+                  frontend-developer
+                </div>
+                <button
+                  class="linkedin"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="fa fa-linkedin"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section__body"
+          >
+            <div
+              class="home container  "
+            >
+              <div
+                class="home__body row"
+              >
+                <div
+                  class=" col-xs-12 col-sm-6 "
+                >
+                  <h1
+                    class="about_me"
+                  >
+                    About
+                    <span
+                      style="color: rgb(33, 150, 243);"
+                    >
+                       Me
+                    </span>
+                  </h1>
+                  <p>
+                    Always passionate about computers and new technologies, the world of the web is my favorite field, I master ui / ux and development, I am very versatile, curious and rigorous and I adapt to any circumstance. Sense of responsibility, perseverance, discernment and management of priorities.
+                  </p>
+                </div>
+                <div
+                  class=" col-xs-12 col-sm-6  "
+                >
+                  <ul />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        style="margin-top: 2rem;"
+      >
+        © 
+        2021
+        , Built with
+         
+        <a
+          href="https://www.gatsbyjs.com"
+        >
+          Gatsby
+        </a>
+      </footer>
     </div>
   </div>
-  <header
-    style={
-      Object {
-        "paddingBottom": 20,
-        "paddingTop": 20,
-      }
-    }
+</div>
+`;
+
+exports[`Home renders correctly 1`] = `
+<div>
+  <div
+    class="container"
   >
     <div
-      className="header row justify-content-between"
+      class="panel"
     >
-      <h1
-        className="name"
+      <button
+        class="panel__switcher"
       >
-        Sadik
-        <span
-          style={
-            Object {
-              "color": "#2196F3",
-            }
-          }
-        >
-           Milliti
-        </span>
-      </h1>
-      <nav>
-        <ul
-          className=""
+        <i
+          aria-hidden="true"
+          class="fa fa-gear"
         />
-      </nav>
+      </button>
+      <div
+        class="panel__body "
+      >
+        <div
+          class="panel__title"
+        >
+          Main Color
+        </div>
+        #2196F3
+        <div
+          class="panel__main-color d-flex justify-content-between flex-wrap"
+        />
+      </div>
     </div>
-  </header>
-  <div>
-    <main>
-      <section
-        className=" flex-column section"
-      >
-        <div
-          className="section__header"
-          style={
-            Object {
-              "backgroundColor": "#2196F3",
-            }
-          }
-        >
-          <div
-            className=" home row align-items-center"
-          >
-            <div
-              className="col-sm-4 col-md-4 col-lg-4"
-            />
-            <div
-              className="col-sm-8 col-md-8 col-lg-8 text-center"
-            >
-              <div
-                className="title_block"
-              >
-                 Sadik Milliti
-              </div>
-              <div
-                className="subtitle_block"
-              >
-                frontend-developer
-              </div>
-              <button
-                className="linkedin"
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-linkedin"
-                />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          className="section__body"
-        >
-          <div
-            className="home container  "
-          >
-            <div
-              className="home__body row"
-            >
-              <div
-                className=" col-xs-12 col-sm-6 "
-              >
-                <h1
-                  className="about_me"
-                >
-                  About
-                  <span
-                    style={
-                      Object {
-                        "color": "red",
-                      }
-                    }
-                  >
-                     Me
-                  </span>
-                </h1>
-                <p>
-                  Always passionate about computers and new technologies, the world of the web is my favorite field, I master ui / ux and development, I am very versatile, curious and rigorous and I adapt to any circumstance. Sense of responsibility, perseverance, discernment and management of priorities.
-                </p>
-              </div>
-              <div
-                className=" col-xs-12 col-sm-6  "
-              >
-                <ul>
-                  <li>
-                    <span
-                      className="label"
-                    >
-                      Age
-                       
-                    </span>
-                    <span
-                      className="value"
-                    >
-                      30
-                    </span>
-                  </li>
-                  <li>
-                    <span
-                      className="label"
-                    >
-                      Residence
-                       
-                    </span>
-                    <span
-                      className="value"
-                    >
-                      belgium
-                    </span>
-                  </li>
-                  <li>
-                    <span
-                      className="label"
-                    >
-                      Address
-                       
-                    </span>
-                    <span
-                      className="value"
-                    >
-                      27 rue léopold, 1000 bruxelles
-                    </span>
-                  </li>
-                  <li>
-                    <span
-                      className="label"
-                    >
-                      e-mail
-                       
-                    </span>
-                    <span
-                      className="value"
-                    >
-                      sadikosad@gmail.com
-                    </span>
-                  </li>
-                  <li>
-                    <span
-                      className="label"
-                    >
-                      Phone
-                       
-                    </span>
-                    <span
-                      className="value"
-                    >
-                      0032492436675
-                    </span>
-                  </li>
-                  <li>
-                    <span
-                      className="label"
-                    >
-                      Freelance
-                       
-                    </span>
-                    <span
-                      className="value"
-                    >
-                      Available
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer
-      style={
-        Object {
-          "marginTop": "2rem",
-        }
-      }
+    <header
+      style="padding-top: 20px; padding-bottom: 20px;"
     >
-      © 
-      2021
-      , Built with
-       
-      <a
-        href="https://www.gatsbyjs.com"
+      <div
+        class="header row justify-content-between"
       >
-        Gatsby
-      </a>
-    </footer>
+        <h1
+          class="name"
+        >
+          Sadik
+          <span
+            style="color: rgb(33, 150, 243);"
+          >
+             Milliti
+          </span>
+        </h1>
+        <nav>
+          <ul
+            class=""
+          />
+        </nav>
+      </div>
+    </header>
+    <div>
+      <main>
+        <section
+          class=" flex-column section"
+        >
+          <div
+            class="section__header"
+            style="background-color: rgb(33, 150, 243);"
+          >
+            <div
+              class=" home row align-items-center"
+            >
+              <div
+                class="col-sm-4 col-md-4 col-lg-4"
+              >
+                <div
+                  class="photo"
+                >
+                  <div
+                    class=" gatsby-image-wrapper"
+                    style="position: relative; overflow: hidden;"
+                  >
+                    <div
+                      aria-hidden="true"
+                      style="width: 100%; padding-bottom: 100%;"
+                    />
+                    <picture>
+                      <source
+                        sizes="100 200 300"
+                        srcset="asdfasdf"
+                      />
+                      <img
+                        alt=""
+                        loading="lazy"
+                        sizes="100 200 300"
+                        src="pretend-i-am-a-base64-encoded-image"
+                        srcset="asdfasdf"
+                        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+                      />
+                    </picture>
+                    <noscript>
+                      &lt;picture&gt;&lt;source srcset="asdfasdf" sizes="100 200 300" /&gt;&lt;img loading="lazy" sizes="100 200 300" srcset="asdfasdf" src="pretend-i-am-a-base64-encoded-image" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+                    </noscript>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-sm-8 col-md-8 col-lg-8 text-center"
+              >
+                <div
+                  class="title_block"
+                >
+                   Sadik Milliti
+                </div>
+                <div
+                  class="subtitle_block"
+                >
+                  frontend-developer
+                </div>
+                <button
+                  class="linkedin"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="fa fa-linkedin"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section__body"
+          >
+            <div
+              class="home container  "
+            >
+              <div
+                class="home__body row"
+              >
+                <div
+                  class=" col-xs-12 col-sm-6 "
+                >
+                  <h1
+                    class="about_me"
+                  >
+                    About
+                    <span
+                      style="color: rgb(33, 150, 243);"
+                    >
+                       Me
+                    </span>
+                  </h1>
+                  <p>
+                    Always passionate about computers and new technologies, the world of the web is my favorite field, I master ui / ux and development, I am very versatile, curious and rigorous and I adapt to any circumstance. Sense of responsibility, perseverance, discernment and management of priorities.
+                  </p>
+                </div>
+                <div
+                  class=" col-xs-12 col-sm-6  "
+                >
+                  <ul />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        style="margin-top: 2rem;"
+      >
+        © 
+        2021
+        , Built with
+         
+        <a
+          href="https://www.gatsbyjs.com"
+        >
+          Gatsby
+        </a>
+      </footer>
+    </div>
   </div>
 </div>
 `;
