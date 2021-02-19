@@ -25,7 +25,6 @@ const query = graphql`
 const IndexPage = () => {
   const { activeColor } = React.useContext(myContext);
   const data = useStaticQuery(query);
-  console.log(data)
   const _header = (
     <div className=" home row align-items-center">
       <div className="col-sm-4 col-md-4 col-lg-4">

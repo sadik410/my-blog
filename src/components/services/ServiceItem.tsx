@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { ServiceItemTypes } from "../../types";
 
 const ServiceItem = ({ icon, title, subtitle }: ServiceItemTypes) => {

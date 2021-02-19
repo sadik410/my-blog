@@ -24,7 +24,7 @@ const services = [
   },
 ];
 beforeEach(() => {
-  useStaticQuery.mockImplementationOnce(() => ({
+  useStaticQuery.mockImplementation(() => ({
     siteMetadata: {
       title: `Gatsby Default Starter`,
       description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -38,7 +38,7 @@ afterAll(() => {
   useStaticQuery.mockRestore();
 });
 
-describe("Home", () => {
+describe("Service / case loggedin", () => {
   it("renders correctly", () => {
     const { container } = render(<Services />);
     expect(container).toMatchSnapshot();
@@ -55,9 +55,8 @@ describe("Home", () => {
     ).toBeInTheDocument();
   });
 
-  /* it("render My Services correctly ", () => {
+  it("render My Services correctly ", () => {
     const { getByText } = render(<Services />);
-    screen.debug();
     expect(
       getByText((content, element) => {
         return (
@@ -66,8 +65,8 @@ describe("Home", () => {
         );
       })
     ).toBeInTheDocument();
-  }); */
-  /* it("render role correctly ", () => {
+  });
+  it("render role correctly ", () => {
     const { getByText } = render(<Services />);
     mySkills.forEach((item) => {
       const getTagLi = (content, element) => {
@@ -75,5 +74,5 @@ describe("Home", () => {
       };
       expect(getByText(getTagLi)).toBeInTheDocument();
     });
-  }); */
+  });
 });

@@ -108,3 +108,112 @@ exports[`Home renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Service / case loggedin renders correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="panel"
+    >
+      <button
+        class="panel__switcher"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-gear"
+        />
+      </button>
+      <div
+        class="panel__body "
+      >
+        <div
+          class="panel__title"
+        >
+          Main Color
+        </div>
+        #2196F3
+        <div
+          class="panel__main-color d-flex justify-content-between flex-wrap"
+        />
+      </div>
+    </div>
+    <header
+      style="padding-top: 20px; padding-bottom: 20px;"
+    >
+      <div
+        class="header row justify-content-between"
+      >
+        <h1
+          class="name"
+        >
+          Sadik
+          <span
+            style="color: rgb(33, 150, 243);"
+          >
+             Milliti
+          </span>
+        </h1>
+        <nav>
+          <ul
+            class=""
+          />
+        </nav>
+      </div>
+    </header>
+    <div>
+      <main>
+        <section
+          class=" flex-column section"
+        >
+          <div
+            class="section__header"
+            style="background-color: rgb(33, 150, 243);"
+          >
+            <h2
+              class="section__title"
+            >
+              Services
+            </h2>
+          </div>
+          <div
+            class="section__body"
+          >
+            <div
+              class="container services"
+            >
+              <h4
+                class="title"
+              >
+                My
+                <span
+                  style="color: rgb(33, 150, 243);"
+                >
+                   Services
+                </span>
+              </h4>
+              <div
+                class="row"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        style="margin-top: 2rem;"
+      >
+        © 
+        2021
+        , Built with
+         
+        <a
+          href="https://www.gatsbyjs.com"
+        >
+          Gatsby
+        </a>
+      </footer>
+    </div>
+  </div>
+</div>
+`;
