@@ -14,13 +14,16 @@ const personalInfor = [
 ];
 beforeAll(() => {
   useStaticQuery.mockImplementation(() => ({
-    siteMetadata: {
-      title: `Gatsby Default Starter`,
-      description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-      author: `@gatsbyjs`,
-      home: {
-        personalInfor,
-      },
+    site: {
+      siteMetadata: {
+        title: `Gatsby Default Starter`,
+        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        author: `@gatsbyjs`,
+        home: {
+          personalInfor,
+        },
+        panelColors: [],
+      }
     },
     myPhoto: {
       childImageSharp: {
@@ -79,11 +82,9 @@ describe("Home", () => {
 
   it("render personalInfor correctly ", () => {
     const { getByText } = render(<Index />);
-    screen.debug();
 
     personalInfor.forEach((item) => {
       const getTagLi = (content, element) => {
-        console.log("element.textContent ", element.textContent);
         return (
           element.tagName.toLowerCase() === "span" &&
           element.textContent === item.value

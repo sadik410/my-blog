@@ -55,7 +55,6 @@ exports[`Home renders correctly 1`] = `
     </header>
     <div>
       <main>
-         
         <section
           class=" flex-column section"
         >

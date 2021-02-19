@@ -152,7 +152,86 @@ exports[`Home renders correctly 1`] = `
                 <div
                   class=" col-xs-12 col-sm-6  "
                 >
-                  <ul />
+                  <ul>
+                    <li>
+                      <span
+                        class="label"
+                      >
+                        Age
+                         
+                      </span>
+                      <span
+                        class="value"
+                      >
+                        30
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        class="label"
+                      >
+                        Residence
+                         
+                      </span>
+                      <span
+                        class="value"
+                      >
+                        belgium
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        class="label"
+                      >
+                        Address
+                         
+                      </span>
+                      <span
+                        class="value"
+                      >
+                        27 rue léopold, 1000 bruxelles
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        class="label"
+                      >
+                        e-mail
+                         
+                      </span>
+                      <span
+                        class="value"
+                      >
+                        sadikosad@gmail.com
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        class="label"
+                      >
+                        Phone
+                         
+                      </span>
+                      <span
+                        class="value"
+                      >
+                        0032492436675
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        class="label"
+                      >
+                        Freelance
+                         
+                      </span>
+                      <span
+                        class="value"
+                      >
+                        Available
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
