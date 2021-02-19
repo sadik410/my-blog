@@ -1,11 +1,11 @@
-import React, { useState, useContext } from "react";
+import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { myContext } from "../context/Provider";
 
 const PanelSwitcher = () => {
-  const [isactive, setActive] = useState(false);
+  const [isactive, setActive] = React.useState(false);
 
-  const { activeColor, changeColor } = useContext(myContext);
+  const { activeColor, changeColor } = React.useContext(myContext);
 
   const data = useStaticQuery(graphql`
     query PanelSwitcherQuery {

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import * as React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -8,7 +8,7 @@ import ResumeItem from "../components/resume/ResumeItem";
 import { myContext } from "../context/Provider";
 
 const Resume = ({ data }) => {
-  const { activeColor } = useContext(myContext);
+  const { activeColor } = React.useContext(myContext);
 
   return (
     <Layout>
@@ -16,9 +16,9 @@ const Resume = ({ data }) => {
        */}{" "}
       <Section title="Resume">
         <div className="container resume">
-          <h4 className="title">
+          <h1 className="title">
             Ex<span style={{ color: activeColor }}>perience</span>
-          </h4>
+          </h1>
           <div className="row">
             <div className="col-md-12">
               <div className="main-timeline">

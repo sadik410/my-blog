@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import * as React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -8,11 +8,11 @@ import ServiceItem from "../components/services/serviceItem";
 import { myContext } from "../context/Provider";
 
 const Services = ({ data }) => {
-  const { activeColor } = useContext(myContext);
+  const { activeColor } = React.useContext(myContext);
   return (
     <Layout>
       {/*       <SEO title="Services" />
-       */}{" "}
+       */}
       <Section title="Services">
         <div className="container services">
           <h4 className="title">

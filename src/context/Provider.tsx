@@ -2,7 +2,7 @@ import React, { useState, createContext } from "react";
 
 export const myContext = createContext({
   activeColor: "#2196F3",
-  changeColor: () => {},
+  changeColor: (color: string) => {},
 });
 
 const Provider = (props) => {

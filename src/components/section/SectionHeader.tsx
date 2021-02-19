@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import * as React from "react";
 import { myContext } from "../../context/Provider";
 import { SectionHeaderTypes } from "../../types";
 
 const SectionHeader = ({ title = "", header }: SectionHeaderTypes) => {
-  const { activeColor } = useContext(myContext);
+  const { activeColor } = React.useContext(myContext);
 
   return (
     <div className="section__header" style={{ backgroundColor: activeColor }}>
